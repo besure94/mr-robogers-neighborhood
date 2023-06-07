@@ -12,9 +12,9 @@ Why am I doing it?
 
 Describe: getNumberFromUser()
 
-Test: "It should return an array with a 0 if the number 0 is inputted."
+Test: "It should return a string with a 0 if the number 0 is inputted."
 Code: getNumberFromUser(0);
-Expected Output: [0];
+Expected Output: "0";
 
 <!-- Test: "It should return an array with a range of numbers from 0 to the inputted number."
 Code: getNumberFromUser(5);
