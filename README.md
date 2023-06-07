@@ -4,7 +4,7 @@ Why am I doing it?
 
 1. Take in number from user.
 2. If the user inputs a 0, return 0.
-3. It will return a range of numbers from 0 to the user inputted number, with the following substitutions made within the returned range.
+3. It will return a range of numbers from 0 to the user inputted number, with the following substitutions made within the returned range, from least to most important.
 4. If the user inputs a number containing a 1, replace all digits with "Beep!".
 5. If the user inputs a number containing a 2, replace all digits with "Boop!".
 6. If the user inputs a number containing a 3, replace all digits with "Won't you be my neighbor?".
@@ -18,7 +18,13 @@ Expected Output: [0];
 
 Test: "It should return an array with a range of numbers from 0 to the inputted number."
 Code: getNumberFromUser(5);
-Expected Output: [1, 2, 3, 4, 5];
+Expected Output: [0, 1, 2, 3, 4, 5];
+
+Describe: replaceNumWithStringInArray()
+
+Test: "It will replace all digits in a number containing 1 with "Beep!"."
+Code: replaceNumWithStringInArray(5);
+Expected Output: [0, "Beep!", 2, 3, 4, 5];
 
 
 
