@@ -1,11 +1,11 @@
-const userNumber = 5;
+const userNumber = "5";
 
 function getRangeOfNumbersFromUser(userNumber) {
-	let arrayOfNumbers = Array.from(userNumber);
-	for (let index = 0; index <= userNumber; index ++) {
-		arrayOfNumbers.push(index);
-	}
-	return arrayOfNumbers;
+  let arrayOfNumbers = [];
+  for (let index = 0; index <= userNumber; index ++) {
+    arrayOfNumbers.push(index);
+  }
+  return arrayOfNumbers;
 }
 
 console.log("Range of numbers: ", getRangeOfNumbersFromUser(userNumber));
