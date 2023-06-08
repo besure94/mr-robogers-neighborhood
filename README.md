@@ -2,7 +2,7 @@ What am I putting into the function?
 What am I getting out of the function?
 Why am I doing it?
 
-1. Take in number from user.
+1. Take in number from user as a string.
 2. If the user inputs a 0, return 0.
 3. It will return a range of numbers from 0 to the user inputted number, with the following substitutions made within the returned range, from least to most important.
 4. If the user inputs a number containing a 1, replace all digits with "Beep!".
@@ -13,11 +13,15 @@ Why am I doing it?
 Describe: getRangeOfNumbersFromUser()
 
 Test: "It should return an array with a 0 if the number 0 is inputted."
-Code: getRangeOfNumbersFromUser(0);
+Code:
+const userNumber = "0";
+getRangeOfNumbersFromUser(userNumber);
 Expected Output: [0];
 
 Test: "It should return an array with a range of numbers from 0 to the inputted number."
-Code: getRangeOfNumbersFromUser(5);
+Code:
+const userNumber = "5";
+getRangeOfNumbersFromUser(5);
 Expected Output: [0, 1, 2, 3, 4, 5];
 
 Describe: replaceNumWithStringInArray()
