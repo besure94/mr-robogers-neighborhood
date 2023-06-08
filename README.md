@@ -10,14 +10,14 @@ Why am I doing it?
 6. If the user inputs a number containing a 3, replace all digits with "Won't you be my neighbor?".
 7. If the user inputs a number that doesn't contain a 1, a 2, or a 3, display a list of values containing the above strings for their respective numbers.
 
-Describe: getNumberFromUser()
+Describe: getRangeOfNumbersFromUser()
 
 Test: "It should return an array with a 0 if the number 0 is inputted."
-Code: getNumberFromUser(0);
+Code: getRangeOfNumbersFromUser(0);
 Expected Output: [0];
 
 Test: "It should return an array with a range of numbers from 0 to the inputted number."
-Code: getNumberFromUser(5);
+Code: getRangeOfNumbersFromUser(5);
 Expected Output: [0, 1, 2, 3, 4, 5];
 
 Describe: replaceNumWithStringInArray()
