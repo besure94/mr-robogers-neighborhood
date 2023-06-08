@@ -1,19 +1,19 @@
 const userNumber = 5;
 
-function getNumberFromUser(userNumber) {
-	let numberArray = Array.from(userNumber);
+function getRangeOfNumbersFromUser(userNumber) {
+	let arrayOfNumbers = Array.from(userNumber);
 	for (let index = 0; index <= userNumber; index ++) {
-		numberArray.push(index);
+		arrayOfNumbers.push(index);
 	}
-	return numberArray;
+	return arrayOfNumbers;
 }
 
-console.log("User number: ", getNumberFromUser(userNumber));
+console.log("Range of numbers: ", getRangeOfNumbersFromUser(userNumber));
 
-function replaceNumWithStringInArray(numberArray, valueToStringify) {
-	for (let index = 0; index < numberArray.length; index++) {
-		if (numberArray[index] === valueToStringify) {
-			numberArray[index] = '' + numberArray[index];
+function replaceNumWithStringInArray(replaceNumbersArray, valueToStringify) {
+	for (let index = 0; index < replaceNumbersArray.length; index++) {
+		if (replaceNumbersArray[index] === valueToStringify) {
+			replaceNumbersArray[index] = "Beep!" + replaceNumbersArray[index];
 		}
 	}
 }
