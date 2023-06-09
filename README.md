@@ -26,9 +26,13 @@ Expected Output: [0, 1, 2, 3, 4, 5];
 
 Test: "It will replace all digits in a number containing a 3 with "Won't you be my neighbor?"."
 Code:
-const userNumber = "5"
+const userNumber = "5";
 mrRobogersNeighborhood(userNumber);
 Expected Output: [0, 1, 2, "Won't you be my neighbor?", 4, 5];
 
+Test: "It will replace all digits in a number containing a 2 with "Boop!".
+const userNumber = "5";
+mrRobogersNeighborhood(userNumber);
+Expected Output: [0, 1, "Boop!", "Won't you be my neighbor?", 4, 5];
 
 
