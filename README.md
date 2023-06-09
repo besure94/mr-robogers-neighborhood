@@ -9,6 +9,7 @@ Why am I doing it?
 5. If the user inputs a number containing a 3, replace all digits with "Won't you be my neighbor?".
 6. If the user inputs a number containing a 2, replace all digits with "Boop!".
 7. If the user inputs a number containing a 1, replace all digits with "Beep!".
+8. If the user inputs any number containing a 3, replace all its digits with "Won't you be my neighbor?".
 
 Describe: mrRobogersNeighborhood()
 
@@ -39,5 +40,10 @@ Test: "It will replace all digits in a number containing a 1 with "Beep!".
 const userNumber = "5";
 mrRobogersNeighborhood(userNumber);
 Expected Output: [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5];
+
+Test: "It will replace all digits in any number containing a 3 with "Won't you be my neighbor?".
+const userNumber = "13"
+mrRobogersNeighborhood(userNumber);
+Expected Output: [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, 10, 11, 12, "Won't you be my neighbor?"]
 
 
