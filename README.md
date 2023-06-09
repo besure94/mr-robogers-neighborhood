@@ -35,4 +35,9 @@ const userNumber = "5";
 mrRobogersNeighborhood(userNumber);
 Expected Output: [0, 1, "Boop!", "Won't you be my neighbor?", 4, 5];
 
+Test: "It will replace all digits in a number containing a 1 with "Beep!".
+const userNumber = "5";
+mrRobogersNeighborhood(userNumber);
+Expected Output: [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5];
+
 
