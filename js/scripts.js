@@ -1,4 +1,4 @@
-let userNumber = "5";
+let userNumber = "13";
 
 function mrRobogersNeighborhood(userNumber) {
 	let userOutputArray = [];
@@ -9,6 +9,8 @@ function mrRobogersNeighborhood(userNumber) {
 			userOutputArray.push("Boop!");
 		} else if (index === 1) {
 			userOutputArray.push("Beep!");
+		} else if (index.toString().includes('3')) {
+			userOutputArray.push("Won't you be my neighbor?");
 		} else {
 			userOutputArray.push(index);
 		}
