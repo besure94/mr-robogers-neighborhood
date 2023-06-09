@@ -5,6 +5,8 @@ function mrRobogersNeighborhood(userNumber) {
   for (let index = 0; index <= userNumber; index ++) {
 		if (index === 3) {
 			userOutputArray.push("Won't you be my neighbor?");
+		} else if (index === 2) {
+			userOutputArray.push("Boop!");
 		} else {
 			userOutputArray.push(index);
 		}
