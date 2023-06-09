@@ -13,6 +13,8 @@ function mrRobogersNeighborhood(userNumber) {
 			userOutputArray.push("Won't you be my neighbor?");
 		} else if (index.toString().includes('2')) {
 			userOutputArray.push("Boop!");
+		} else if (index.toString().includes('1')) {
+			userOutputArray.push("Beep!");
 		} else {
 			userOutputArray.push(index);
 		}
