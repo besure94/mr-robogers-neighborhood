@@ -1,5 +1,3 @@
-let userNumber = "20";
-
 function mrRobogersNeighborhood(userNumber) {
 	let userOutputArray = [];
   for (let index = 0; index <= userNumber; index ++) {
@@ -16,4 +14,41 @@ function mrRobogersNeighborhood(userNumber) {
   return userOutputArray;
 }
 
-console.log("Range of numbers: ", mrRobogersNeighborhood(userNumber));
+function addTextToDOM(userOutputArray) {
+		const p = document.querySelector("p");
+		p.append(userOutputArray);
+}
+
+function handleFormSubmission(event) {
+	const resetBtn = document.getElementById("reset");
+	const neighborhood = document.getElementById("neighborhood");
+	const userInput = document.getElementById("userInput").value;
+	console.log(userInput);
+	const numbersAndStrings = mrRobogersNeighborhood(userInput);
+	console.log(numbersAndStrings);
+	addTextToDOM(numbersAndStrings);
+	neighborhood.removeAttribute("class", "hidden");
+	event.preventDefault();
+}
+
+window.addEventListener("load", function() {
+	document.querySelector("form#form").addEventListener("submit", handleFormSubmission);
+});
+
+
+// window.addEventListener("load", function() {
+// 	let form = document.querySelector("form");
+// 	let mrRobogersNeighborhood = mrRobogersNeighborhood(userInput);
+// 	let resetBtn = document.getElementById("reset");
+// 	let neighborhood = document.getElementById("neighborhood");
+
+// 	form.addEventListener("submit", function(event) {
+// 		let userInput = document.getElementById("userInput").value;
+// 		neighborhood.setAttribute("class", "hidden");
+// 		event.preventDefault();
+// 	});
+
+// 	// form.addEventListener("submit", function() {
+
+// 	// });
+// });
