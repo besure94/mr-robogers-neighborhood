@@ -34,21 +34,3 @@ function handleFormSubmission(event) {
 window.addEventListener("load", function() {
 	document.querySelector("form#form").addEventListener("submit", handleFormSubmission);
 });
-
-
-// window.addEventListener("load", function() {
-// 	let form = document.querySelector("form");
-// 	let mrRobogersNeighborhood = mrRobogersNeighborhood(userInput);
-// 	let resetBtn = document.getElementById("reset");
-// 	let neighborhood = document.getElementById("neighborhood");
-
-// 	form.addEventListener("submit", function(event) {
-// 		let userInput = document.getElementById("userInput").value;
-// 		neighborhood.setAttribute("class", "hidden");
-// 		event.preventDefault();
-// 	});
-
-// 	// form.addEventListener("submit", function() {
-
-// 	// });
-// });
