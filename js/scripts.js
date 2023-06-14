@@ -11,7 +11,7 @@ function mrRobogersNeighborhood(userNumber) {
 			userOutputArray.push(index);
 		}
   }
-  return userOutputArray;
+  return userOutputArray.join(', ');
 }
 
 function addTextToDOM(userOutputArray) {
@@ -20,12 +20,9 @@ function addTextToDOM(userOutputArray) {
 }
 
 function handleFormSubmission(event) {
-	const resetBtn = document.getElementById("reset");
 	const neighborhood = document.getElementById("neighborhood");
 	const userInput = document.getElementById("userInput").value;
-	console.log(userInput);
 	const numbersAndStrings = mrRobogersNeighborhood(userInput);
-	console.log(numbersAndStrings);
 	addTextToDOM(numbersAndStrings);
 	neighborhood.removeAttribute("class", "hidden");
 	event.preventDefault();
