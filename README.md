@@ -1,3 +1,37 @@
+## Mr Roboger's Neighborhood
+
+#### By Brian Scherner
+
+#### An application that replaces specific numbers with different strings.
+
+## Technologies Used
+
+* HTML
+* CSS
+* JavaScript
+
+## Description
+
+This application allows users to input a number, which is then converted into an array of numbers ranging from 0 to the inputted number. Any numbers containing a 3 are replaced with "Won't you be my neighbor?", any numbers containing a 2 are replaced with "Boop!", and any numbers containing a 1 are replaced with "Beep!". These exceptions are applied in order of most important to least important. For example, if the user inputted a 15, the array would be "0, Beep!, Boop!, Won't you be my neighbor?, 4, 5, 6, 7, 8, 9, Beep!, Beep!, Boop!, Won't you be my neighbor?, Beep!, Beep!".
+
+## Setup/Installation Requirements
+
+* Clone this repository to your desktop.
+* Navigate to the index.html file in the directory.
+* Open index.html in your browser.
+
+Known Bugs
+
+Application is functioning correctly, however its design is not optimal. I would like to return to this project at a later date, and update its appearance.
+
+## License
+
+MIT
+
+Copyright (c) 2023 Brian Scherner
+
+### Tests:
+
 What am I putting into the function?
 What am I getting out of the function?
 Why am I doing it?
