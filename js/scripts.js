@@ -14,10 +14,11 @@ function mrRobogersNeighborhood(userNumber) {
   return userOutputArray.join(', ');
 }
 
-function addTextToDOM(userOutputArray) {
-		const p = document.querySelector("p");
-		p.append(userOutputArray);
+function addTextToDOM(userOutputString) {
+	const p = document.querySelector("p");
+	p.innerText = userOutputString;
 }
+
 
 function handleFormSubmission(event) {
 	const neighborhood = document.getElementById("neighborhood");
