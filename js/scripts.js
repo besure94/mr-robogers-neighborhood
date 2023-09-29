@@ -19,7 +19,6 @@ function addTextToDOM(userOutputString) {
 	p.innerText = userOutputString;
 }
 
-
 function handleFormSubmission(event) {
 	const neighborhood = document.getElementById("neighborhood");
 	const userInput = document.getElementById("userInput").value;
