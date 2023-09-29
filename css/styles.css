@@ -32,3 +32,15 @@ h2 {
 	font-family:'Courier New', Courier, monospace;
 	font-weight: 900;
 }
+
+label {
+  color: #f95738;
+}
+
+h1 {
+  color:#f95738;
+}
+
+hr {
+  background-color:#f95738;
+}

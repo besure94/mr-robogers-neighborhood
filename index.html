@@ -7,19 +7,21 @@
 	</head>
 	<body>
 		<div class="container">
-			<div class="jumbotron">
-				<h1>Mr Roboger's Neighborhood</h1>
-			</div>
-			<h2>Enter any whole number you'd like!</h2>
+			<h1>Mr Roboger's Neighborhood</h1>
+      <hr>
+			<h2>Enter a number and your name!</h2>
 			<br>
 			<form id="form">
 				<label for="userInput"></label>
-				<input id="userInput" type="text" name="userInput" placeholder="Enter number here">
+				<input id="userInput" type="number" name="userInput" placeholder="Enter number here">
 				<br>
+        <br>
+        <label for="userName"></label>
+        <input id="userName" type="text" name="userName" placeholder="Enter name here">
 				<br>
+        <br>
 				<button type="submit" id="submit">Submit</button>
 			</form>
-
 			<br>
 			<div id="neighborhood" class="hidden">
 				<p></p>
