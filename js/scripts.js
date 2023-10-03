@@ -14,9 +14,24 @@ function mrRobogersNeighborhood(userNumber, nameInput) {
   return userOutputArray.join(', ');
 }
 
+
+// Trying to reverse array starting with largest number first if option is selected.
 function addTextToDOM(userOutputString) {
 	const p = document.querySelector("p");
-	p.innerText = userOutputString;
+  const reverse = document.getElementById("reverse").checked;
+	// p.innerText = userOutputString;
+  if (reverse === true) {
+    array = Array.from(userOutputString);
+    console.log(typeof(array));
+    let sortedArray = array.sort((b,a)=>b-a);
+    console.log(typeof(sortedArray));
+    let reversedArray = sortedArray.reverse();
+    console.log(reversedArray);
+    p.innerText = reversedArray.join("");
+  }
+  else {
+    p.innerText = userOutputString;
+  }
 }
 
 function handleFormSubmission(event) {
